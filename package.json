@@ -10,10 +10,14 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"ladle": "ladle serve",
+		"ladle:build": "ladle build",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --fix",
+		"format": "biome format . --write",
 		"preview": "vite preview",
-		"test": "vitest"
+		"test": "vitest",
+		"test:run": "vitest run",
+		"test:coverage": "vitest run --coverage"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",

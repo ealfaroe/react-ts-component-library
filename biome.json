@@ -11,12 +11,61 @@
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "tab",
+		"lineWidth": 100,
+		"ignore": ["**/*.md"]
+	},
+	"javascript": {
+		"formatter": {
+			"trailingCommas": "es5",
+			"semicolons": "always",
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "double"
+		}
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"correctness": {
+				"useExhaustiveDependencies": "warn",
+				"noUnusedVariables": "error",
+				"noUnusedImports": "error"
+			},
+			"style": {
+				"noNonNullAssertion": "error",
+				"useConsistentArrayType": "error",
+				"useConst": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useExponentiationOperator": "error",
+				"useNumberNamespace": "error",
+				"useShorthandArrayType": "error",
+				"useSingleVarDeclarator": "error"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn",
+				"noEmptyBlockStatements": "error",
+				"noEmptyInterface": "error",
+				"noRedundantUseStrict": "error",
+				"noConsoleLog": "warn"
+			},
+			"complexity": {
+				"noForEach": "error",
+				"noStaticOnlyClass": "error",
+				"noUselessConstructor": "error",
+				"useArrowFunction": "error",
+				"useLiteralKeys": "error",
+				"useOptionalChain": "error"
+			},
+			"performance": {
+				"noAccumulatingSpread": "warn",
+				"noDelete": "error"
+			},
+			"a11y": {
+				"useKeyWithClickEvents": "error",
+				"useKeyWithMouseEvents": "error"
+			}
 		}
 	},
 	"organizeImports": {

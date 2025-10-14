@@ -8,5 +8,11 @@ export default defineConfig({
 		environment: "jsdom",
 		globals: true,
 		setupFiles: "./src/setupTests.ts",
+		include: ["src/**/*.test.{ts,tsx}"],
+		exclude: ["node_modules", "dist", ".ladle"],
+		coverage: {
+			reporter: ["text", "html"],
+			exclude: ["**/*.stories.{ts,tsx}", "**/*.test.{ts,tsx}", "src/setupTests.ts"]
+		}
 	},
 });
