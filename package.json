@@ -1,9 +1,9 @@
 {
 	"name": "react-ts-component-library",
 	"author": "Esteban Alfaro Esposito",
-	"description": "A React component library built with TypeScript, Taliwind and Vite.",
+	"description": "React component library built with TypeScript, Tailwind and Vite.",
 	"license": "MIT",
-	"private": false,
+	"private": true,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
@@ -12,7 +12,6 @@
 		"ladle": "ladle serve",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --fix",
-		"lint:format": "biome format .",
 		"preview": "vite preview",
 		"test": "vitest"
 	},
