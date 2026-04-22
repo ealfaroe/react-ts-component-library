@@ -16,7 +16,11 @@
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true
+		"noUncheckedSideEffectImports": true,
+		"paths": {
+			"@components/*": ["./src/components/*"],
+			"@styles/*": ["./src/theme/*"]
+		}
 	},
 	"include": ["src"]
 }

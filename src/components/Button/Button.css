@@ -1,0 +1,65 @@
+/* Variables */
+:root {
+    --btn-primary-bg: var(--primary-blue);
+    --btn-primary-text: var(--white);
+    --btn-secondary-bg: var(--secondary-gray);
+    --btn-secondary-text: var(--white);
+    --btn-link-text: var(--primary-blue);
+
+    --btn-sm-padding: calc(4 / var(--base-font-size) * 1rem) calc(8 / var(--base-font-size) * 1rem);
+    --btn-sm-font: calc(12 / var(--base-font-size) * 1rem);
+    --btn-md-padding: calc(8 / var(--base-font-size) * 1rem) calc(16 / var(--base-font-size) * 1rem);
+    --btn-md-font: calc(14 / var(--base-font-size) * 1rem);
+    --btn-lg-padding: calc(12 / var(--base-font-size) * 1rem) calc(24 / var(--base-font-size) * 1rem);
+    --btn-lg-font: calc(18 / var(--base-font-size) * 1rem);
+
+    --btn-radius: 4px;
+}
+
+/* Base button styles */
+.cl__btn {
+    border: 1px solid transparent;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cl__btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Variants */
+.cl__btn--primary {
+    background-color: var(--btn-primary-bg);
+    color: var(--btn-primary-text);
+}
+
+.cl__btn--secondary {
+    background-color: var(--btn-secondary-bg);
+    color: var(--btn-secondary-text);
+}
+
+.cl__btn--link {
+    border: none;
+    color: var(--btn-link-text);
+    text-decoration: underline;
+}
+
+/* Sizes */
+.cl__btn--small {
+    font-size: var(--btn-sm-font);
+    padding: var(--btn-sm-padding);
+}
+
+.cl__btn--medium {
+    font-size: var(--btn-md-font);
+    padding: var(--btn-md-padding);
+}
+
+.cl__btn--large {
+    font-size: var(--btn-lg-font);
+    padding: var(--btn-lg-padding);
+}
