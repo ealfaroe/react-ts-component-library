@@ -5,8 +5,6 @@ This project provides a list of fully configurable components to be used for cre
 - Use `npm run test` to check the testing coverage.
 - Use `npm run lint` to verify any possible code related errors.
 
-Perform these checks when you think you are done with the task.
-
 # Code Style
 
 ## File Imports
@@ -14,7 +12,7 @@ Perform these checks when you think you are done with the task.
 Make use of Vite's path alias utilities to define and reference files from frequently used locations, for example:
 
 - Components: `src/components` would be `@components`.
-- Types: `src/types` would be `@types`.
+- Types: `src/theme` would be `@styles`.
 
 ## General Guidelines
 
@@ -26,7 +24,7 @@ Make use of Vite's path alias utilities to define and reference files from frequ
 
 ## Styling Guidelines
 
-- Each component has its own `.scss` file, it is expected that all custom style rules will be placed under this file (assigned to their respective custom class) and all Tailwind utility classes will bet set at its own `.tsx` file.
+- Each component has its own `.css` file, it is expected that all custom style rules will be placed under this file (assigned to their respective custom class) and all Tailwind utility classes will bet set at its own `.tsx` file.
 - BEM naming convention: For custom classes, the format to be used is BEM.
 - Variables: Avoid hardcoded colors and prefer the usage of variables to assign them.
 - All CSS properties within a selector must be ordered alphabetically.
@@ -42,8 +40,6 @@ Add JSDoc comments to functions, methods, classes, fields and enums with proper 
 
 # Miscellaneous
 
-Do not make assumptions or speculate about code, plans or requirements without exploring first.
-Pause and ask for clarification when you are unsure after the exploration phase.
 Do not create any assets or media files, nor read any image files. For placeholder content use the following as the source:
 
 - Images: https://placehold.co/600x400

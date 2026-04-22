@@ -1,0 +1,6 @@
+@layer tailwind, variables, mixins, functions;
+
+@import "tailwindcss" layer(tailwind);
+@import "./theme/variables" layer(variables);
+@import "./theme/mixins" layer(mixins);
+@import "./theme/functions" layer(functions);
