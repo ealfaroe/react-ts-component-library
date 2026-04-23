@@ -1,0 +1,10 @@
+.cl__img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    visibility: visible;
+}
+
+.cl__img--loading {
+    opacity: 0;
+    visibility: hidden;
+}
