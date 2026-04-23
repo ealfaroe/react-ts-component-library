@@ -1,18 +1,6 @@
 This project provides a list of fully configurable components to be used for creating User Interfaces and to provide a consistent graphical design between pages.
 
-# Package Management
-
-- Use `npm run test` to check the testing coverage.
-- Use `npm run lint` to verify any possible code related errors.
-
 # Code Style
-
-## File Imports
-
-Make use of Vite's path alias utilities to define and reference files from frequently used locations, for example:
-
-- Components: `src/components` would be `@components`.
-- Types: `src/theme` would be `@styles`.
 
 ## General Guidelines
 
